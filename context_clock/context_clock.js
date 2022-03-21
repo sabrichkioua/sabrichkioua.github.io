@@ -19,9 +19,9 @@ let italics, interMed, interBold;
 let cpeach, cgreen, ccream, cpurple, colive, cred;
 
 function preload() {
-  italics = loadFont('LibreBaskerville-Italic.ttf');
-  interMed = loadFont('Inter-Medium.ttf');
-  interBold = loadFont('Inter-Bold.ttf');
+  italics = loadFont('NimbusSanL-Bol.otf');
+  interMed = loadFont('NimbusSanL-Bol.otf');
+  interBold = loadFont('NimbusSanL-Bol.otf');
 }
 
 function setup() {
