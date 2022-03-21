@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Perspective Animation for Strangers</title>
+    <link rel="stylesheet" href="walking.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.dom.js"></script>
+    <script src="p5.play.js"></script>
+    <script src="strangersPerspective.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- Source icon -->
+    <a href="https://github.com/siorikitajima/perspective" target="_blank"><div id="githubBtn">
+        <img src="images/github-icon.svg" alt="Github"/>
+        <p>Source</p>
+    </div></a>
+    <div id="panelBtn" onclick="panelControl()"></div>
+    
+    <!-- Modal -->
+    <div id="modalBG">
+        <div id="greeting">
+            <h1>&#47;&#47; Hello Stranger &#47;&#47;</h1>
+            <p class="top-border">These mini data stories are based on real-world numbers. You are not alone.</p>
+            <img src="images/loading-Tiny.gif" alt="loading"/>
+            <div class="progress" id="PreLoaderBar">
+                <div class="indeterminate"></div>
+            </div>
+            <!-- <p class="loading"><span>LOADING</span></p> -->
+        </div>
+        <!-- <div class="loadingSpinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> -->
+    </div>
+
+    <div id="topPanel">
+        <div class="infoBtn" id="issueHDiv">
+            <h1 class="issueH1" id="h1Mobile"></h1>
+            <p class="issueP" id="pMobile"></p>
+        </div>
+        <!-- <a id="learnLink" onclick="learnLinkOpen()">
+            <div class="infoBtn" id="learnBtn">
+                <img src="images/infoIcons-learn.svg" alt="Learn More">
+                <p>Learn More</p>
+            </div>
+        </a>
+        <a id="helpLink" onclick="helpLinkOpen()">
+            <div class="infoBtn" id="helpBtn">
+                <img src="images/infoIcons-help.svg" alt="Find Help">
+                <p>Find Help</p>
+            </div>
+        </a>
+        <a id="voicesLink" onclick="voicesLinkOpen()">
+        <div class="infoBtn" id="voicesBtn">
+            <img src="images/infoIcons-voices.svg" alt="Voices">
+            <p>Voices</p>
+        </div>
+        </a>
+        <a id="shareLink" onclick="shareLinkOpen()">
+            <div class="infoBtn" id="shareBtn">
+                <img src="images/infoIcons-share.svg" alt="Share">
+                <p>Share</p>
+            </div>
+        </a> -->
+    </div>
+
+    <div id="floor">
+        <img id="GroundImg" src="images/numbers_gray.png" alt="Floor Image">
+    </div>
+    <div id="bottomPanel">
+        <div id="prevIssue" onclick="previousColor()">
+            <img class="arrows" src="images/left-arrow.svg" alt="Left Arrow">
+        </div>
+        <div id="thisIssue">
+            <h1 class="issueH1" id="h1Screen"></h1>
+            <p class="issueP" id="pScreen"></p>
+        </div>
+        <div id="nextIssue" onclick="nextColor()">
+            <img class="arrows" src="images/right-arrow.svg" alt="Right Arrow">
+        </div>
+    </div>
+    <div id="copied">URL Copied!</div>
+</body>
+</html>
