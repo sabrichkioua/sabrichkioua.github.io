@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <link rel="icon" href="hatecrime-favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+  
+    <meta property="og:url" content="https://deaxmachina.github.io/hatecrime_uk_p5/" />
+    <meta property="og:title" content="I don't like you...| Racist and Religious Hate Crime in London" />
+    <meta property="og:description" content="Data art visualisation of racist and religious hate crime in London 2010-2020, created with p5.js" />
+    <meta name="description" content="Data art visualisation of racist and religious hate crime in London 2010-2020, created with p5.js" />
+  
+    <meta property="og:image" content="https://live.staticflickr.com/65535/51333606003_2857d9d98e_o.png" />
+    <meta name="image" content="https://live.staticflickr.com/65535/51333606003_2857d9d98e_o.png" />
+    <meta property="og:image:alt" content="preview of visualisation" />
+  
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="en_US" />
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="Dea Bankova">
+
+    <title>I don't like you...| Racist and Religious Hate Crime in London</title>
+
+  </head>
+  <body>
+
+    <div id="footnote">
+
+      <div class="footnote-concept">
+        <h3>////// Concept</h3>
+        <div class="concepts">
+          <div class="footnote-concept-negative">
+            Each of the circular shapes corresponds to 100 hate crime incidents reported to the police 
+            (London Met Police, London, UK). The definition of “Racist and Religious Hate Crime” 
+            in the UK includes non-criminal incidents triggered by the race, ethnicity, or religion 
+            of the victim. 
+            I chose this topic because of my experience of escalating  
+            <a href="https://www.theguardian.com/commentisfree/series/eu-27-migration-a-new-chapter" target="_blank" class="link">anti-Eastern European sentiments and verbal abuse</a>, 
+            which, unfortunately, doesn’t even scratch the surface of the problem. 
+          </div>
+          <div class="footnote-concept-positive">
+            The flowing veil surrounding the dark unhappy shapes is my representation of the 
+            sometimes invisible ‘shield’ of love, support, friendship. I wanted to find a way 
+            to elevate the acts of kindness that happen in the community all the time. 
+            While media accounts of negative sentiments abound, the positive 
+            stories rarely get recorded. 
+            <a href="https://www.theguardian.com/uk-news/2021/may/13/glasgow-residents-surround-and-block-immigration-van-from-leaving-street" target="_blank" class='link'>(but there are some)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footnote-data">
+        <h3>////// Data</h3>
+        <div class="data">
+          Data used: <a href="https://data.london.gov.uk/dataset/mps-hate-crime-or-special-crime-dashboard-data" target="_blank" class="link">Racist and Religious Hate Crime, London Metropolitan Police</a>
+          <p>
+            Notes: I chose not to display the actual numbers, but rather use the data and shapes to convey the scale of the problem. 
+            For notes and methodology, and preparation code, see 
+            Jupyter notebook 
+            <a href="https://github.com/deaxmachina/hatecrime_uk_data" target="_blank" class="link">here</a>, 
+            or in-browser notebook <a href="https://deaxmachina.github.io/hatecrime_uk_data/" target="_blank" class="link">here</a>. 
+          </p>
+        </div>
+      </div>
+
+      <div class="footnote-credits">
+        <h3>////// Credits</h3>
+        <div class="credits">
+          I started learning p5.js only a couple of months ago, and I couldn’t have done 
+          this without the 
+          <a href="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw " target="_blank" class="link">amazing video tutorials</a> of 
+          The Coding Train (Daniel Shiffman). I look forward to continuing my learning and to more creative coding projects in p5. 
+
+          <p>Made by Dea Bankova in 2021.</p>
+        </div>
+      </div>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="data.js"></script>
+    <script src="circle.js"></script>
+    <script src="sketch.js"></script>
+
+  </body>
+</html>
